@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int BB, TB;
+    float BMI=0;float squared_TB=0;
+    
+    cout<<"Selamat Datang di Kalkulator Body Mass Index"<<endl;
+    cout<<"Silahkan input berat badan dan tinggi badan anda (Tekan Enter)"<<endl;
+    
+    cout<<"Berat Badan"<<":";
+    cin>>BB;
+    
+    cout<<"Tinggi Badan"<<":";
+    cin>>TB;
+    
+    BMI=BB/squared_TB;
+    squared_TB=TB*TB;
+    
+    if(BMI<18.5)
+        cout<<"underweight"<<endl;
+    else if (18.5<BMI<=24.9)
+        cout<<"Normal weight"<<endl;
+    else if(25<BMI<=29.9)
+        cout<<"Overweight"<<endl;
+    else if (30.0<BMI<=34.9)
+        cout<<"Obesity Class I"<<endl;
+    else if (35<BMI<39.9)
+        cout<<"Obesity Class II"<<endl;
+    else if (BMI>=40)
+        cout<<"Obesity Class III"<<endl;
+    
+    cout<<"Ayo jaga pola hidup sehatmu!";
+    
+    
+    return 0;
+}
